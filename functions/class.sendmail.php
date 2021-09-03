@@ -8,24 +8,23 @@ if(!class_exists('Form_Send_Mail')){
 		public function sendMail($subject, $msg, $from, $nomefrom, $destino, $nomedestino){
 
 			require_once(JG_MAIL_PATH . 'class/mailer/class.phpmailer.php');
-			$mail = new PHPMailer();//Instancia a classe do phpmailer
+			$mail = new PHPMailer();
 			
-			$mail->IsSMTP();//habilita envio smtp
-			$mail->SMTPAuth = true;//envio autenticado
-			$mail->Host = 'saborladecasa.com';
-			$mail->Port = '25';
+			$mail->IsSMTP();
+			$mail->SMTPAuth = true;
+			$mail->Host = 'yourserver.com';
+			$mail->Port = 'yourport';
 			
-			//aqui começamos o envio do e-mail
-			$mail->Username = 'geral@saborladecasa.com';
-			$mail->Password = 'Flamengo2511';
+			$mail->Username = 'user@server.com';
+			$mail->Password = 'yourPassword';
 			
-			$mail->From = $from; // email de quem envia
-			$mail->FromName = $nomefrom;// nome de quem envia
+			$mail->From = $from; 
+			$mail->FromName = $nomefrom;
 			
-			$mail->IsHTML(true);//é html o tipo de mensagem
-			$mail->Subject = utf8_decode($subject);//assunto a ser enviado
-			$mail->Body = utf8_decode($msg);// mensagem propriamente dita
-			$mail->AddAddress($destino, utf8_decode($nomedestino));//seta o destino do e-mail
+			$mail->IsHTML(true);
+			$mail->Subject = utf8_decode($subject);
+			$mail->Body = utf8_decode($msg);
+			$mail->AddAddress($destino, utf8_decode($nomedestino));
 			
 			if($mail->Send()){
 				return true;
