@@ -1,0 +1,118 @@
+*{
+	outline:none;font-size:100%;box-sizing:border-box;font-family: 'Lato', sans-serif;
+}
+
+/*====Style for Inputs===*/
+
+.responsejgmail{
+	position:absolute;
+	max-width:100% !important;
+	width:100% !important;
+	height:130px;
+	z-index:99;
+	margin-top:300px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:0;
+	padding:0;
+	background:#fff;
+}
+
+.responsejgmail div{
+	padding:2.5%;
+}
+
+.responsejgmail div p{
+	color:#67d18f;
+	font-size:1.9rem;
+	transform:scale(1.4);
+	font-weight:00;
+	height:inherit;
+	width:inherit;
+	
+}
+
+.responseerrorjgmail div p{
+    color:#dc4235 !important;
+}
+
+.instructs{
+	height:35px;
+	width:auto;
+	font-size:1.8rem;
+	color:#ccc;
+}
+
+.titleform{
+	font-size:2.3rem;
+	font-weight:600;
+	color:#666;
+}
+
+.errors{
+	color:#BF0000;
+	font-size:1.7rem;
+}
+
+span.errors:last-of-type{
+	margin-bottom:2.5rem;
+}
+
+.groupmailinput label{
+	font-size:1.7rem;
+	color:#333;
+}
+
+.mailinput{
+	padding-left:7.5px !important;
+	font-size:1rem;
+	color:#999;
+	height:45px;
+}
+
+.mailinput::placeholder{
+	font-size:1.5rem;
+	font-style:italic;
+	font-weight:300;
+	color:#e8e8e8;
+}
+
+.activefocus:focus{
+	border:.1rem double #333;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 7.5px 0px rgba(0,0,0,0.2);
+}
+
+input[type=text], input[type=email]{
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;;
+	border-radius: 5px 5px 5px 5px;
+	border : inset 1px #000000;
+}
+
+#message_text{
+	font-size:1.7rem !important;
+  -webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;;
+	border-radius: 5px 5px 5px 5px;
+	border : inset 1px #000000;
+}
+
+.consent{
+	font-size:1.4rem;
+	color:#999;
+}
+
+.submitjgmail{
+	font-size:1.7rem;
+	font-weight:600;
+	text-transform:uppercase;
+}
+
+.submitjgmail:hover{
+	text-decoration:none;
+	cursor:pointer;
+	opacity:.9;
+}
